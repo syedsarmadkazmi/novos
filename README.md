@@ -2,17 +2,17 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Libraries Used:
 
-[react-native-health](https://github.com/agencyenterprise/react-native-health) for Apple Health integration.
-[react-native-google-fit](https://github.com/StasDoskalenko/react-native-google-fit) for Google Fit integration.
+- [react-native-health](https://github.com/agencyenterprise/react-native-health) for Apple Health integration.
+- [react-native-google-fit](https://github.com/StasDoskalenko/react-native-google-fit) for Google Fit integration.
 
 # Demo Resources
 
 ## Android APK
-[Demo APK](https://drive.google.com/file/d/1NnEtf2crQaIQv9xGtial_9UQETIMJNPA/view?usp=sharing)
+- [Demo APK](https://drive.google.com/file/d/1NnEtf2crQaIQv9xGtial_9UQETIMJNPA/view?usp=sharing)
 
 ## Loom Videos
-[Integrations & Flow Demo](https://www.loom.com/share/105ab2747a2742659090b4fb8afd8a58)
-[Code + Approach Overview](https://www.loom.com/share/0ab9ec82d76e4c32bba8a84aa5525749)
+- [Integrations & Flow Demo](https://www.loom.com/share/105ab2747a2742659090b4fb8afd8a58)
+- [Code + Approach Overview](https://www.loom.com/share/0ab9ec82d76e4c32bba8a84aa5525749)
 
 ## Android Screenshots
 <img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/d3cf2f37-0ad0-4a3f-8ebe-0cea645f20eb" alt="GoogleFit Auth 1" style="width:200px;"/>
