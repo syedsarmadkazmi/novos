@@ -1,1 +1,1 @@
-export * from './health.slice'
+export * from './health.slice';

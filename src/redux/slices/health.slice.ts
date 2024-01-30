@@ -1,7 +1,7 @@
-import {createSlice} from '@reduxjs/toolkit'
-import {useSelector} from 'react-redux'
+import {createSlice} from '@reduxjs/toolkit';
+import {useSelector} from 'react-redux';
 
-import {RootState} from '../store'
+import {RootState} from '../store';
 
 const healthSlice = createSlice({
   name: 'health',
@@ -13,20 +13,19 @@ const healthSlice = createSlice({
   reducers: {
     /** locale reducers */
     updateSteps: (state, action) => {
-      state.steps = action.payload
+      state.steps = action.payload;
     },
 
     updateStatus: (state, action) => {
-      state.active = action.payload
+      state.active = action.payload;
     },
   },
-})
+});
 
-export const {updateSteps, updateStatus} =
-  healthSlice.actions
+export const {updateSteps, updateStatus} = healthSlice.actions;
 
-export const healthReducer = healthSlice.reducer
+export const healthReducer = healthSlice.reducer;
 
 export const useHealthSelector = () => {
-  return useSelector((state: RootState) => state.health)
-}
+  return useSelector((state: RootState) => state.health);
+};

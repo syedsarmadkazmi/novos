@@ -1,1 +1,1 @@
-export * from './StepsCount'
+export * from './StepsCount';

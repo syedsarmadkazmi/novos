@@ -1,5 +1,4 @@
 export enum EPlatform {
-    IOS = 'ios',
-    ANDROID = 'android',
+  IOS = 'ios',
+  ANDROID = 'android',
 }
-

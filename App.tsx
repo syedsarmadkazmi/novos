@@ -6,16 +6,11 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  View,
-} from 'react-native';
+import {SafeAreaView, StatusBar, StyleSheet, View} from 'react-native';
 
 import {Health} from './src/screens';
-import { Provider } from 'react-redux';
-import { store } from './src/redux';
+import {Provider} from 'react-redux';
+import {store} from './src/redux';
 
 function App(): React.JSX.Element {
   return (
