@@ -1,5 +1,32 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Libraries Used:
+
+[react-native-health](https://github.com/agencyenterprise/react-native-health) for Apple Health integration.
+[react-native-google-fit](https://github.com/StasDoskalenko/react-native-google-fit) for Google Fit integration.
+
+# Demo Resources
+
+## Android APK
+[Demo APK](https://drive.google.com/file/d/1NnEtf2crQaIQv9xGtial_9UQETIMJNPA/view?usp=sharing)
+
+## Loom Videos
+[Integrations & Flow Demo](https://www.loom.com/share/105ab2747a2742659090b4fb8afd8a58)
+[Code + Approach Overview](https://www.loom.com/share/0ab9ec82d76e4c32bba8a84aa5525749)
+
+## Android Screenshots
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/d3cf2f37-0ad0-4a3f-8ebe-0cea645f20eb" alt="GoogleFit Auth 1" style="width:200px;"/>
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/575ff10f-e7c7-4366-8866-f90a03cae008" alt="GoogleFit Auth 2" style="width:200px;"/>
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/9e9a7490-6c5e-4040-8ed2-e6d41ff53141" alt="GoogleFit Auth 3" style="width:200px;"/>
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/c14bec25-7070-4b48-b577-0df93c9660f8" alt="GoogleFit Auth 4" style="width:200px;"/>
+
+## IOS Screenshots
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/ef379e86-2fab-4743-96d7-c324514a0dc2" alt="HealthKit 1" style="width:200px;"/>
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/c6a3a098-a3a9-493b-b64e-90ff8a822f2f" alt="HealthKit 2" style="width:200px;"/>
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/0f3d67ec-4120-445a-859b-58ffb0826975" alt="HealthKit 3" style="width:200px;"/>
+<img src="https://github.com/syedsarmadkazmi/novos/assets/36984862/0ad7a049-0383-4bba-b796-fcdcae658749" alt="HealthKit 4" style="width:200px;"/>
+
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
