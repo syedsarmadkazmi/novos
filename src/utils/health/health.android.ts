@@ -2,7 +2,7 @@ import {Alert, Linking} from 'react-native';
 import GoogleFit, {BucketUnit, Scopes} from 'react-native-google-fit';
 import {store, updateStatus, updateSteps} from '../../redux';
 
-const options = {
+export const options = {
   scopes: [
     Scopes.FITNESS_ACTIVITY_READ,
     Scopes.FITNESS_ACTIVITY_WRITE,

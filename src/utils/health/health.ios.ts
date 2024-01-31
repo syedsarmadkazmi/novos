@@ -6,15 +6,15 @@ import AppleHealthKit, {
 import {store, updateStatus, updateSteps} from '../../redux';
 import {EHealthStatusCode} from '../../types';
 
-const permissions = {
+export const options = {
   permissions: {
-    read: [AppleHealthKit.Constants.Permissions.Steps],
-    write: [AppleHealthKit.Constants.Permissions.Steps],
+    read: [AppleHealthKit?.Constants?.Permissions?.Steps],
+    write: [AppleHealthKit?.Constants?.Permissions?.Steps],
   },
 } as HealthKitPermissions;
 
 export const firePermissionRequest = () => {
-  AppleHealthKit.initHealthKit(permissions, (error: string) => {
+  AppleHealthKit.initHealthKit(options, (error: string) => {
     /* Called after we receive a response from the system */
     if (error) {
       Alert.alert('[ERROR] Cannot grant permissions!');
@@ -33,14 +33,7 @@ export const firePermissionRequest = () => {
           store.dispatch(updateSteps(0));
 
           //generate an alert dialog allowing users to modify permissions via settings
-          Alert.alert(
-            'Permissions not given',
-            'Please allow the app to read data from HealthKit',
-            [
-              {text: 'Cancel'},
-              {text: 'Open Settings', onPress: () => openAppSettings()},
-            ],
-          );
+          showAlert()
         }
       })
       .catch(error1 => {
@@ -50,9 +43,9 @@ export const firePermissionRequest = () => {
   });
 };
 
-export const verifyAuthStatus = () => {
+export const verifyAuthStatus = (): Promise<boolean> => {
   return new Promise((resolve, reject) => {
-    AppleHealthKit.getAuthStatus(permissions, (err, results) => {
+    AppleHealthKit.getAuthStatus(options, (err, results) => {
       if (err) {
         Alert.alert('Error verifying HealthKit status!');
         reject(err);
@@ -85,4 +78,15 @@ export const fetchStepCount = () => {
 
 export const openAppSettings = () => {
   Linking.openURL('App-Prefs:Privacy&path=HEALTH/NOVOS');
+};
+
+export const showAlert = () => {
+  Alert.alert(
+    'Permissions not given',
+    'Please allow the app to read data from HealthKit',
+    [
+      {text: 'Cancel'},
+      {text: 'Open Settings', onPress: () => openAppSettings()},
+    ],
+  );
 };

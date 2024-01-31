@@ -20,7 +20,10 @@ export const StepsCount = ({steps}) => {
         duration={1000}
         delay={500}
         style={styles.progress}>
-        {() => <Text style={styles.stepsText}>{fill}</Text>}
+        {() => 
+        <>
+        <Text style={styles.stepsText}>{fill}<Text style={styles.smallText}>%</Text></Text>
+        </>}
       </AnimatedCircularProgress>
 
       <Text style={styles.label}>
